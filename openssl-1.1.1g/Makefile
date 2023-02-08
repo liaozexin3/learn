@@ -90,7 +90,7 @@ ECHO = echo
 # ASFLAGS for this reason.
 
 CROSS_COMPILE=
-CC=$(CROSS_COMPILE)gcc
+CC=${GCC_tool_prefix}gcc
 CXX=$(CROSS_COMPILE)g++
 CPPFLAGS=
 CFLAGS=-Wall -O3
@@ -123,8 +123,8 @@ TARFILE=        ../$(NAME).tar
 # Variables starting with CNF_ are common variables for all product types
 
 CNF_CPPFLAGS=-DNDEBUG
-CNF_CFLAGS=-pthread -m64
-CNF_CXXFLAGS=-std=c++11 -pthread -m64
+CNF_CFLAGS=-pthread 
+CNF_CXXFLAGS=-std=c++11 -pthread 
 CNF_LDFLAGS=
 CNF_EX_LIBS=-ldl -pthread
 
