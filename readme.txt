@@ -1,7 +1,0 @@
-qwe
-qwe
-q
-we
-qw
-eq
-???
